@@ -1,0 +1,19 @@
+# Example Dataset Configuration for YOLOv11
+# This is a template - update paths and class names for your dataset
+
+# Dataset root path (absolute or relative to this file)
+path: ../data
+
+# Dataset splits
+train: train/images
+val: val/images
+test: test/images
+
+# Number of classes
+nc: 3
+
+# Class names
+names:
+  0: person
+  1: car
+  2: bicycle

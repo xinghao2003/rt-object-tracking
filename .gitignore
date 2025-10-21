@@ -205,3 +205,40 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# YOLOv11 / Ultralytics specific
+runs/
+wandb/
+logs/
+reports/
+models/*/weights/*.pt
+*.weights
+
+# Dataset files (uncomment if you want to track your data)
+data/train/
+data/val/
+data/test/
+
+# Large media files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+
+# Model exports
+*.onnx
+*.engine
+*.tflite
+*.pb
+
+# TensorBoard
+events.out.tfevents.*
+
+# IDE
+.vscode/
+.idea/
