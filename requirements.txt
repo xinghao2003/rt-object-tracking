@@ -1,0 +1,30 @@
+# YOLOv11 and Ultralytics
+ultralytics>=8.0.0
+
+# Deep Learning Frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Computer Vision
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+Pillow>=10.0.0
+
+# GUI
+tk
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Logging and Reporting
+tqdm>=4.65.0
+pyyaml>=6.0
+tensorboard>=2.13.0
+
+# Utilities
+scipy>=1.10.0
