@@ -11,6 +11,7 @@ A comprehensive framework for training, validating, and deploying YOLOv11 models
 - **Real-time Visualization**: Live preview with bounding boxes and tracking lines
 - **Comprehensive Reporting**: Training analysis and performance metrics
 - **Flexible Input**: Support for both images and videos
+- **Google Colab Support**: Train models on free GPU with included Jupyter notebook
 
 ## Repository Structure
 
@@ -32,6 +33,8 @@ rt-object-tracking/
 ├── models/                      # Trained models directory
 ├── logs/                        # Training/validation logs
 ├── reports/                     # Analysis reports
+├── notebooks/                   # Jupyter notebooks
+│   └── train_yolov11_colab.ipynb  # Google Colab training notebook
 ├── src/                         # Source code
 │   ├── training/                # Training scripts
 │   │   ├── train.py            # Main training script
@@ -71,7 +74,42 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Quick Start
+## Training on Google Colab (Recommended for GPU Training)
+
+If you don't have a local GPU, use our Google Colab notebook for free GPU training:
+
+### Option 1: Open in Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/xinghao2003/rt-object-tracking/blob/main/notebooks/train_yolov11_colab.ipynb)
+
+### Option 2: Manual Upload
+1. Go to [Google Colab](https://colab.research.google.com/)
+2. Upload `notebooks/train_yolov11_colab.ipynb`
+3. Follow the step-by-step instructions in the notebook
+
+### What's Included in the Notebook:
+- ✅ GPU setup and environment configuration
+- ✅ Dataset upload (ZIP, Google Drive, or URL)
+- ✅ Automatic dataset splitting and validation
+- ✅ Interactive training with real-time monitoring
+- ✅ TensorBoard integration
+- ✅ Validation and testing
+- ✅ Model export and download
+- ✅ Sample inference examples
+
+### Typical Workflow:
+1. Open the Colab notebook
+2. Enable GPU (Runtime → Change runtime type → GPU)
+3. Upload your dataset (ZIP file or Google Drive)
+4. Configure training parameters
+5. Start training (uses free GPU)
+6. Download trained model
+7. Use locally with GUI or CLI
+
+**Training Time (on Tesla T4):**
+- 100 epochs with YOLOv11n: ~30-60 minutes
+- 100 epochs with YOLOv11s: ~60-120 minutes
+
+## Quick Start (Local Training)
 
 ### 1. Prepare Your Dataset
 
